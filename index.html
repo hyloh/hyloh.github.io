@@ -1,160 +1,236 @@
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>hyloh website</title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<meta name="viewport" cosntent="width=device-width, initial-scale=1, user-scalable=no" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="landing is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio showcasing my skills, projects and experience">
+    <title>Loh Hui Yi | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">hyloh</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">year 1 life</a></li>
-											<li><a href="year2.html">year 2 life</a></li><!--before is elements.html in a href-->
-											<li><a href="year3.html">year 3 life</a></li>
-											<li><a href="year4.html">year 4 life</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">LOH HUI YI</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Welcome To My Website</h2>
-							<p>I'm Loh Hui Yi<br />
-							A 1st year student of Bachelor of Computer Science <br />
-							(Graphic and Multimedia Software)</p>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Hi, I'm <span class="highlight">LOH HUI YI</span></h1>
+                <p class="subtitle">Student of Computer Graphics & Multimedia Software</p>
+                <p class="intro">Exploring computer graphics and multimedia to craft engaging digital experiences.</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+                </div>
+            </div>
+        </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>My Profile<br />
-								</h2>
-								<p>Hey! My name is Loh Hui Yi and I'm 20 years old. I'm now study at University of Technology Malaysia. My goal is to become a web developer, so  I'm currently working hard in my studies to get there.<br />
-								Even though it's crucial to accomplish that, I'll also take a break and relax by sleeping, playing games, or having a meal.</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
-						</div>
-					</section>
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="images/huiyi.png" alt="LOH HUI YI" width="400" height="400" loading="lazy">
+                    </div>
+                    <div class="about-content">
+                        <h2>About Me</h2>
+                        <p>Hey! My name is Loh Hui Yi and I'm 22 years old. I'm now study at University of Technology
+                            Malaysia, Johor Bahru.</p>
+                        <p>My goal is to become a web developer or a game developer, so I'm currently working hard in my
+                            studies to get
+                            there.
+                            Even though it's crucial to accomplish that, I'll also take a break and relax by sleeping,
+                            playing games, or having a meal. I want to build digital experiences that are not only
+                            visually appealing but also inclusive and performant.</p>
+                        <a href="about.html" class="btn secondary-btn">Learn More About Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="https://images.unsplash.com/photo-1585079542156-2755d9c8a094?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div><div class="content">
-								<h2><a href="generic.html">year 1</a><br />
-								life</h2>
-								<p>If at first you don't succeed, call it version 1.0.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="https://www.thoughtco.com/thmb/a52VZS2Tuz735nKCS34LGyUMOzA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1086740226-5c2d625a4cedfd00016ed36c.jpg" alt="" /></div><div class="content">
-								<h2><a href="year2.html">year 2</a><br />
-								life</h2>
-								<p>Bad code isn't bad, its just misunderstood</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="https://images.unsplash.com/photo-1564865878688-9a244444042a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div><div class="content">
-								<h2><a href="year3.html">year 3</a><br />
-								life</h2>
-								<p>It's not a bug - it's an undocumented feature</p>
-							</div>
-						</section>
-						<section class="spotlight">
-						<div class="image"><img src="https://images.unsplash.com/photo-1520453803296-c39eabe2dab4?q=80&w=2025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /></div><div class="content">
-							<h2><a href="year4.html">year 4</a><br />
-							life</h2>
-							<p>Deleted code is debugged code</p>
-						</div>
-						</section>
-					</section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2>Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Software Development Practices</h3>
+                        <ul class="skill-list">
+                            <li>Agile & Scrum</li>
+                            <li>Object-Oriented Design</li>
+                            <li>Version Control (Git)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <ul class="skill-list">
+                            <li>Team Collaboration</li>
+                            <li>Problem-Solving</li>
+                            <li>Critical Thinking</li>
+                            <li>Time Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<!-- Three 
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Contact</h2>
-								<p>Contact me<br />
-								</p>
-							</header>
-							<ul class="features">
-								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a>
-									<h3>Email</h3>
-									<p>lohhuiyi040425@gmail.com</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Github</h3>
-									<p>hyloh</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Instagram</h3>
-									<p>lohhuiyi_717</p>
-								</li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
-									<h3>Facebook</h3>
-									<p>hui yi loh</p>
-								</li>
-								
-							</ul>
-						</div>
-					</section>
-				-->
+        <section class="featured-work">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/kfk.png" alt="Project 1 preview" width="600" height="400" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Project One</h3>
+                            <p>Developed a website for Kelab Fotokreatif UTM (KFK) to showcase club
+                                activities, announcements, and resources. The platform provides an intuitive interface
+                                for users to explore information about the club, view updates, and access equipment
+                                details. The design focuses on clean layout, user-friendly navigation, and accessibility
+                                to enhance user experience for students of all levels. </p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="https://mykfk.xo.je/index.php" class="project-link">View Website</a></br>
+                            <a href="https://www.figma.com/proto/veHq5TKNLFp2FQ1jYNIAsW/MyKFK-Website?node-id=0-1&t=olkr5PofEpieU7RJ-1"
+                                class="project-link">View Figma Prototype</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/smash.png" alt="Project 2 preview" width="600" height="400" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Project Two</h3>
+                            <p>“Smash the Button” is a fast-paced interactive game designed to test players’ reaction
+                                speed and accuracy. The objective is simple: players must quickly press or “smash” the
+                                correct button as it appears within a limited time.</p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                            </div>
+                            <a href="https://github.com/hyloh/smashTheButton" class="project-link">View Code</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project3.png" alt="Project 3 preview" width="600" height="400"
+                                loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Project Three</h3>
+                            <p>Analysis and design a system for managing the sale of fruits. This project consists of
+                                using SQL statements.</p>
+                            <div class="project-tags">
+                                <span>MySQL</span>
+                            </div>
+                            <a href="https://github.com/hyloh/general_project/blob/54528fe2a37098e4d419e34fa2e9ea2038db0bac/sql/fruitsData"
+                                class="project-link">View Code</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="view-all">
+                    <a href="projects.html" class="btn outline-btn">View All Projects</a>
+                </div>
+            </div>
+        </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="mailto:lohhuiyi040425@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="https://github.com/hyloh" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.facebook.com/profile.php?id=100093552932975&mibextid=ZbWKwL" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/lohhuiyi_717?igsh=MXJncXl2a2FyZ3Azbg==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-	
-						</ul>
-						<ul class="copyright">
-							<li>&copy; HYLOH</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <p class="contact-intro">Have a question? Feel free to reach out!</p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+                </form>
+                <div id="form-status" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
 
-			</div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">LOH HUI YI</a>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/hyloh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                    <a href="mailto:lohhuiyi@graduate.utm.my" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year">2025</span> Loh Hui Yi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-	</body>
+    <script src="js/main.js" defer></script>
+</body>
+
 </html>

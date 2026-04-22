@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse through my portfolio of projects">
+    <title>Projects | LOH HUI YI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">LOH HUI YI</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#contact" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p class="subtitle">A showcase of my recent work and coding experiments</p>
+            </div>
+        </section>
+
+        <section class="project-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="C++">C++</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="HTML">HTML</button>
+                    <button class="filter-btn" data-filter="CSS">CSS</button>
+                    <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+                    <button class="filter-btn" data-filter="PHP">PHP</button>
+                    <button class="filter-btn" data-filter="MySQL">MySQL</button>
+                    <button class="filter-btn" data-filter="R_Programming">R Programming</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-showcase">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" id="project1" data-categories="C++">
+                        <div class="project-image">
+                            <img src="images/project1.png" alt="wesak" width="600" height="400" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2>Happy Wesak Day</h2>
+                            <p>A festive greeting card built with C++ using the OpenGL functions and can be controlled
+                                using the space key.</p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                                <span>OpenGL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hyloh/general_project/blob/b167de6aced3bf5271171dd0d103a2ef8375aafa/c%2B%2B/happyWesak.cpp"
+                                    class="btn secondary-btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-categories="C++">
+                        <div class="project-image">
+                            <img src="images/project2.png" alt="time sorting" width="600" height="400" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2>Patients' Appointment Time Sorting</h2>
+                            <p>A project used for appointment time sorting was developed using the C++ programming
+                                language.</p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hyloh/general_project/blob/b167de6aced3bf5271171dd0d103a2ef8375aafa/c%2B%2B/patientAppointment.cpp"
+                                    class="btn secondary-btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                                <a href="project/patientSort.pdf" class="btn outline-btn" target="_blank"
+                                    rel="noopener noreferrer">View Documentation</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" id="project2" data-categories="MySQL">
+                        <div class="project-image">
+                            <img src="images/project3.png" alt="fruits sell management" width="600" height="400"
+                                loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2>Fruits Sell Management</h2>
+                            <p>Analysis and design a system for managing the sale of fruits. This project consists of
+                                using SQL statements.</p>
+                            <div class="project-tags">
+                                <span>MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hyloh/general_project/blob/54528fe2a37098e4d419e34fa2e9ea2038db0bac/sql/fruitsData"
+                                    class="btn secondary-btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                                <a href="project/databaseFruitsSellManagement.pdf" class="btn outline-btn"
+                                    target="_blank" rel="noopener noreferrer">View Documentation</a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-categories="R_Programming">
+                        <div class="project-image">
+                            <img src="images/project4.png" alt="salary analysis" width="600" height="400"
+                                loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2>Salary Analysis</h2>
+                            <p>Analysis of the factors that affect someone else's salary.</p>
+                            <div class="project-tags">
+                                <span>R Programming</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hyloh/general_project/tree/1abe490f63c614c4c2842fac871acb32f3e92400/R_Programming"
+                                    class="btn secondary-btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                                <a href="project/salaryAnalysis.pdf" class="btn outline-btn" target="_blank"
+                                    rel="noopener noreferrer">View Documentation</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-categories="HTML JavaScript CSS PHP">
+                        <div class="project-image">
+                            <img src="images/kfk.png" alt="kfk" width="600" height="400" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2>KFK UTM</h2>
+                            <p>A website for Kelab Fotokreatif UTM (KFK) to showcase club activities, announcements, and
+                                resources. </p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://mykfk.xo.je/index.php" class="btn secondary-btn" target="_blank"
+                                    rel="noopener noreferrer">View Website</a>
+                                <a href="https://www.figma.com/proto/veHq5TKNLFp2FQ1jYNIAsW/MyKFK-Website?node-id=0-1&t=olkr5PofEpieU7RJ-1"
+                                    class="btn outline-btn" target="_blank" rel="noopener noreferrer">View Figma
+                                    Prototype</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card" data-categories="C++">
+                        <div class="project-image">
+                            <img src="images/smash.png" alt="Smash The Button" width="600" height="400" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2>Smash the Button</h2>
+                            <p>Smash the Button” is a fast-paced interactive game designed to test players’ reaction
+                                speed and accuracy.</p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hyloh/smashTheButton" class="btn secondary-btn"
+                                    target="_blank" rel="noopener noreferrer">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Project 7-->
+                    <article class="project-card" data-categories="PHP JavaScript CSS HTML">
+                        <div class="project-image">
+                            <img src="images/foodOrder.png" alt="food order system" width="600" height="400"
+                                loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2>Food Ordering System</h2>
+                            <p>A web-based food ordering platform that enables customers to browse menus, place orders,
+                                and track order status through an interactive ordering interface.</p>
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/CCY0810/Online-Food-Ordering-System"
+                                    class="btn secondary-btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Project 8-->
+                    <article class="project-card" data-categories="python">
+                        <div class="project-image">
+                            <img src="images/imgEnhance.png" alt="image enhancement application" width="600"
+                                height="400" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2>Image Enhancement Application</h2>
+                            <p>An application is intend to function as a simple image editor that allows the users to
+                                upload, edit and save images through an interactive graphical user interface.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hyloh/ImageEnhancementApplication" class="btn secondary-btn"
+                                    target="_blank" rel="noopener noreferrer">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Project 9-->
+                    <article class="project-card" data-categories="C++ OpenGL">
+                        <div class="project-image">
+                            <img src="images/doraemon.png" alt="doraemon" width="600" height="400" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2>Doraemon </h2>
+                            <p>Developing a 3D character, which is Doraemon, a popular and friendly animated character
+                                using OpenGL and GLUT.</p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                                <span>OpenGL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hyloh/doraemon" class="btn secondary-btn" target="_blank"
+                                    rel="noopener noreferrer">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-projects">
+            <div class="container">
+                <h2>Other Notable Projects</h2>
+                <div class="mini-projects-grid">
+
+                    <article class="mini-project" data-categories="Analysis&Design">
+                        <h3>Network Floor Plan</h3>
+                        <p>A floor plan design that fulfills the network requirement for the Faculty of Computing.</p>
+                        <div class="project-links">
+                            <a href="project/networkFloorPlan.pdf" target="_blank"
+                                rel="noopener noreferrer">Documentation</a>
+                        </div>
+                    </article></br>
+
+                    <article class="mini-project" data-categories="Analysis&Design">
+                        <h3>CPU & Hardware Performance Benchmark</h3>
+                        <p>The analysis of the two computer performances from all criteria.</p>
+                        <div class="project-links">
+                            <a href="project/CPU&HardwarePerformancesBenchmark.pdf" target="_blank"
+                                rel="noopener noreferrer">Documentation</a>
+                        </div>
+                    </article></br>
+
+                    <article class="mini-project" data-categories="Analysis&Design">
+                        <h3>UTM Smart</h3>
+                        <p>The Enhancement for the UTM Smart.</p>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/proto/GaSC5nC6SEF0TuZnIZFjnQ/UTMSMART?node-id=2-28&t=7PfA08xES39qGroV-1&starting-point-node-id=80%3A67
+" target="_blank" rel="noopener noreferrer">Figma Prototype</a>
+                        </div>
+                    </article></br>
+
+                    <article class="mini-project" data-categories="Analysis&Design">
+                        <h3>ICare</h3>
+                        <p>An AI Medicine Reminder & Interaction Checker.</p>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/proto/M3WLPVqCaCb5vIkaYlZzEG/AI_project?node-id=0-1&t=uiZXiSkihm9MBDho-1"
+                                target="_blank" rel="noopener noreferrer">Figma Prototype</a>
+                        </div>
+                    </article></br>
+
+                    <article class="mini-project" data-categories="Analysis&Design">
+                        <h3>Dengue Alert AR System</h3>
+                        <p>An Augmented Reality (AR) application purpose for raising the awareness of
+                            Malaysians regarding recurring outbreaks of dengue in the country.</p>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/proto/9wh7Wq0ohX7L461CGdby3p/SE_A3?node-id=0-1&t=J2BQNexQjeEiGMN1-1"
+                                target="_blank" rel="noopener noreferrer">Figma Prototype</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Have a Project in Mind?</h2>
+                <p>I'm always open to discuss new projects, creative ideas or opportunities to be part of your vision.
+                </p>
+                <a href="index.html#contact" class="btn primary-btn">Start a Conversation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">LOH HUI YI</a>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/hyloh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a href="mailto:lohhuiyi@graduate.utm.my" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year">2025</span> Loh Hui Yi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
